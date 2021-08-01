@@ -1,0 +1,147 @@
+body{
+  margin:0;
+  padding: 20px;
+  position:absolute;
+  background: url("https://www.sarahhearts.com/wp-content/uploads/2013/10/Nov_2013_wallpaper_2560x1440.jpg");
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;   
+}
+
+.red{
+    color:red;
+}
+
+
+.top{
+  margin-top: 5px;
+}
+  input{
+      width: 300px;
+      border:1px solid black;
+      border-radius: 70px;
+      outline: 0;
+      padding:7px;
+      background-color: #fff;
+      box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3);    
+
+  }
+
+  .main{
+    background-color:rgba(0,0,0,0.5);
+    font-size: 14px;
+    height: 100%;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 60px rgba(0,0,0,0.3);
+    color:#fff;
+    width: auto;
+    margin-left: 27%;
+}
+
+.child{
+  display:flex;
+  justify-content: center;
+  font-family:sans-serif;
+  font-size:20px;
+}
+
+.table1{
+ 
+  font-family:sans-serif;
+}
+
+h5{
+  font-weight: bold;
+  font-family:sans-serif;
+}
+
+  .button {
+    
+    appearance: none;
+    border-radius: 90px;
+    border: 2px solid black;
+    border-color: black;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: black;
+    cursor: pointer;
+    background-color:greenyellow;
+    font-size: 10px;
+    font-weight: bold;
+    
+    margin-top: 20px;
+    outline: none;
+    overflow: hidden;
+    padding: 1em 2em;
+    position: relative;
+    width: 100px;
+  }
+
+  .addbutton {
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color:#111;
+    margin: 0.25px;
+    background-color:red;
+    cursor: pointer;
+  }
+  .addbutton:hover{
+    opacity: 0.7;
+}
+
+
+  .editbutton {
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color:#111;
+    margin: 0.25px;
+    background-color:red;
+    cursor: pointer;
+  }
+  .editbutton:hover{
+    opacity: 0.7;
+}
+
+
+  .savebutton
+  {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color:#111;
+    margin: 0.25px;
+    background-color:green;
+    cursor: pointer;
+
+  }
+  .savebutton:hover{
+    opacity: 0.7;
+}
+
+
+
+  th{
+    font-family: sans-serif;
+    font-size: 17px;
+  }
+  
+.td{
+    text-align: center;
+}

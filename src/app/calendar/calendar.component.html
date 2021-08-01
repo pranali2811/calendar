@@ -1,0 +1,53 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://kit.fontawesome.com/a81368914c.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="top">
+  <div class="child">
+
+    <button class="btn btn-dark" (click)="onPrevMonth()"><i class="fa fa-arrow-left"></i></button>
+    &nbsp; &nbsp; &nbsp;
+    <span>  <b> {{ month.title }}  {{ month.year}} </b>  </span>
+    &nbsp; &nbsp; &nbsp;
+    <button class="btn btn-dark" (click)="onNextMonth()" ><i class="fa fa-arrow-right"></i></button>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <button class="btn btn-dark" (click)="myFunction()">today</button>
+  </div>
+  
+  <br>
+  
+  <table class="main">
+    <tr>
+      <th *ngFor='let weekDay of weekDays' [ngClass]="weekDay.style" >{{ weekDay.title }}</th>
+    </tr>
+  
+    <tr *ngFor='let w of month.weeks'>
+      <td *ngFor='let day of w.days'> 
+        <button class="button" [hidden]='!day.title' (click)="onSelectDay(day)"> {{ day.title }} </button>
+      </td>
+    </tr>
+  
+  </table>
+  
+  <br>
+
+  
+  
+  <div  *ngIf='selectedDay' class="child">
+    <h5>Today's Date: {{myDate | date: 'shortDate' }} </h5>
+  </div>
+  
+  <div *ngIf='selectedDay' class="child">
+    <table *ngIf='selectedDay.tasks.length > 0' class="table1">
+     
+  
+      
+  
+    </table>
+  </div>
+</div>
+</body>
+
